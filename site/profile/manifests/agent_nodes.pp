@@ -1,5 +1,5 @@
 class profile::agent_nodes {
   include dockeragent
-  dockeragent::node {'abraham':}
-  dockeragent::node {'db':}
+  dockeragent::node {'web.abraham':}
+  dockeragent::node {'db.abraham':}
 }
