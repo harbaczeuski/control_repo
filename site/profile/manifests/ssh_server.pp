@@ -10,18 +10,6 @@ class profile::ssh_server {
 		ensure => present,
 		user   => 'root',
 		type   => 'ssh-rsa',
-		key    => 'SHA256:ULdEatzF92Y41hfZYR/6F1Zma0mssmATMLJdhchQyWU',
-	}
-	ssh_authorized_key { 'root@db.puppet.vm':
-		ensure => present,
-		user   => 'root',
-		type   => 'ssh-rsa',
-		key    => 'SHA256:YJhxp2c9MeAbU2jX8DD6IV1EEAkFTM+IAtQyXUrrYsY',
-	}
-	ssh_authorized_key { 'root@web.puppet.vm':
-		ensure => present,
-		user   => 'root',
-		type   => 'ssh-rsa',
-		key    => 'SHA256:hzRIp9HIUrVcy8cXze+jMGzOMz7faMnbi0JCBd3gCU4',
+		key    => 'AAAAB3NzaC1yc2EAAAADAQABAAABAQDIoTNeF/HIQ9hQRIviSkfN+iQILqodneXx7cThkmRvM0ksiqf6EqBCyM3mbmG3ZXwOXeLUGxxRCBIn3+vQm9OOJpeuKSc1JQrJskyraIrVDz7mILSzxzsQoMQIR7Sh2wtPSMNdrz2S0/ZzTeBYFizvWs3dipeUcXIhxDofqJA3pAe8HVnYIKYPHpsa7aVVtXf0X1VS4jErDoRjXPFKEAYebNGiO1HV1bZ9+XsdSlOoBsKcoz5yhRrZ4vrm9XQMQCqc8MeRkl5QcZRn7ldspeoWa5+nfcYGNX20H4+TKr0yytJlE9mRJJAViamSfErNBvCVwFjOvHjB0/1+/X0/wMMv',
 	}
 }
